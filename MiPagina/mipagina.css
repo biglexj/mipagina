@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* el asterisco selecciona todo del Html*/
+/*box.sizing pone un margen pero hacia adentro*/
+/*con # llmas al id o class*/
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*eston son los estilos generales*/
+
+.image-container{
+
+  display: flex;
+
+}
+
+.image-container img{
+  width: 100%;
+}
+
+/*a qui empieza del los del header*/
+
+header{
+  background: #783DF5;
+  padding: 10px 30px;
+  /*El primer valor en padding es de arriba y abajo y el segundo de izquierda y derecha. es sobre los margenes internos */
+}
+
+#logo{
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  border: none;
+}
+
+#logo img{
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+#titulo{
+    /* estos siguientes sirve para alinear al centro vertical*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 7px;
+  background-color: #fff;
+  text-align: left;
+  font-size: 11px;
+  color: green;
+  border: yellow;
+
+  /* borde redondeado, poner en px, si no se quiere crear un circulo*/
+  border-radius: 10px;
+  margin-left: 10px;
+
+}
+
+/*Estilos dl hero*/
+/*Para acceder a las clases es . y a los id #*/
+
+#hero{
+  position: relative;
+}
+#hero #fondo{
+  display: inline-block;
+  width: 100%;
+
+}
+
+#hero .informacion-contenedor{
+  /*Display flex centra vericalmente*/
+  /* margin, top, transform:translate: es un caso especial para mover en ejes;*/
+  position: absolute;
+  top: 50%;
+  transform: translateY(-62%);
+  left: 25%;
+  align-items: center;
+  width: 100%;
+  padding: 0px 3%;
+  width: 100%;
+
+}
+
+#hero .informacion-contenedor #foto-perfil{
+  width: 200px;
+
+}
+
+#hero .informacion-contenedor #foto-perfil img{
+  border-radius: 100%;
+
+}
+
+#hero .informacion-contenedor .informacion{
+
+  font-weight: bold;
+  margin-top: 20px;
+  width: calc(100% - 200px);
+}
+
+#hero .informacion-contenedor .informacion span{
+  display: inline-block;
+  color: gray;
+}
+#hero .informacion-contenedor .informacion p{
+  margin-top: 20px;
+}
+
+#hero .informacion-contenedor .informacion h1{
+  /*Margin-left sirve para mover horizontalmente*/
+  font-size: 35px;
+  color: #19B2FF;
+}
+
+main{
+  padding: 30px;
+}
+
+main p{
+  padding: 20px;
+  background-color: aquamarine;
+  border-radius: 30px;
+}
+main .social-media{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  list-style: none;
+  /*List style es de los puntitos que se genera*/
+  }
+
+main .social-media .social-icon img{
+  width: 60px;
+  height: 60px;
+}
+
+main .social-media li{
+  margin-left: 10px;
+}
+
+main .social-media .social-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+main .social-media #Platzi img{
+  width: 40px;
+  height: 40px;
+}
+
+main .social-media #Platzi{ 
+  background-color: #191c23;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
